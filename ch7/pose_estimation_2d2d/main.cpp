@@ -7,7 +7,7 @@
 
 using std::vector;
 
-cv::Point2d pixel2cam(cv::Point2f pt, cv::Mat k);
+cv::Point2d pixel2cam(const cv::Point2f& pt, const cv::Mat& k);
 
 int main(int argc, char** argv) {
   // init log
@@ -55,10 +55,10 @@ int main(int argc, char** argv) {
   return 0;
 }
 
-cv::Point2d pixel2cam(cv::Point2f pt, cv::Mat k) {
-  cv::Mat ptMat = (cv::Mat_<double>(3, 1) << pt.x, pt.y, 1);
-  cv::Mat camMat = k.inv() * ptMat;
+cv::Point2d pixel2cam(const cv::Point2f& pixel, const cv::Mat& k) {
+  cv::Mat pixelMat = (cv::Mat_<double>(3, 1) << pixel.x, pixel.y, 1);
+  cv::Mat camMat = k.inv() * pixelMat;
   cv::Point2d ptCam(camMat.at<double>(0, 0) / camMat.at<double>(2, 0),
-      camMat.at<double>(1, 0) / camMat.at<double>(2, 0));
+                    camMat.at<double>(1, 0) / camMat.at<double>(2, 0));
   return ptCam;
 }

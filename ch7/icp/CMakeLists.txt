@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 find_package(G2O REQUIRED)
 find_package(OpenCV REQUIRED)
 include_directories(${G20_INCLUDE/DIRS} /usr/include/eigen3)
-set(SRC_LIST main.cc feature_extraction/extract_feature.cc utils/utils.cc)
+set(SRC_LIST main.cc feature_extraction/extract_feature.cc utils/utils.cc svd_icp/svd.cc)
 include_directories(/usr/include/eigen)
 set(GLOG_LIB glog)
 # g2o

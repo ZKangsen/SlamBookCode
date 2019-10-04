@@ -5,7 +5,6 @@
 #include <opencv2/calib3d/calib3d.hpp>
 #include "feature_extraction/extract_feature.h"
 #include "utils/utils.h"
-#include "bundle_adjustment/bundle_adjustment.h"
 
 #define _use_BA_
 

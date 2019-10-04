@@ -1,13 +1,12 @@
 cmake_minimum_required(VERSION 3.5)
-project(pnp)
+project(icp)
 
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 set(CMAKE_CXX_STANDARD 11)
 find_package(G2O REQUIRED)
 find_package(OpenCV REQUIRED)
 include_directories(${G20_INCLUDE/DIRS} /usr/include/eigen3)
-set(SRC_LIST main.cc feature_extraction/extract_feature.cc utils/utils.cc
-        bundle_adjustment/bundle_adjustment.cc)
+set(SRC_LIST main.cc feature_extraction/extract_feature.cc utils/utils.cc)
 include_directories(/usr/include/eigen)
 set(GLOG_LIB glog)
 # g2o

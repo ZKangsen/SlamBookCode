@@ -24,6 +24,7 @@ class Camera {
     Vector3d Pixel2World(const Vector2d& p_pix, const SE3& T_c_w, double depth = 1) const;
 
     Vector3d GetCameraCenter() const;
+    double GetDepthScale() const;
 
   private:
     double fx_;

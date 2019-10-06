@@ -26,6 +26,7 @@ class Frame {
 
     // check if the point is in the frame
     bool IsInFrame(const Vector3d &pt_world) const;
+    size_t FrameId() const;
 
   private:
     size_t frame_id_;
@@ -35,24 +36,6 @@ class Frame {
     Mat img_;
     Mat depth_;
 }; // class Frame
-
-class MapPoint {
-  public:
-    typedef std::shared_ptr<MapPoint> MapPointPtr;
-    typedef std::shared_ptr<const MapPoint> MapPointConstPtr;
-
-    MapPoint();
-    MapPoint(size_t id, Vector3d position, Vector3d normal);
-    static MapPointPtr CreateMapPoint();
-
-  private:
-    size_t id_;         // id
-    Vector3d pos_;     // pose in world
-    Vector3d normal_;   // normal of viewing direction
-    Mat descriptor_;    // descriptor
-    int observed_times_; // being observed by feature matching algo
-    int correct_times_;  // being an inlier in pose estimation
-};
 
 } // namespace myslam
 

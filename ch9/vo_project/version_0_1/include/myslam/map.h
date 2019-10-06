@@ -1,6 +1,7 @@
 #ifndef MYSLAM_MAP_H_
 #define MYSLAM_MAP_H_
 
+#include "map_point.h"
 #include "frame.h"
 
 namespace myslam {

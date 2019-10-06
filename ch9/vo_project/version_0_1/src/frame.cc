@@ -2,54 +2,63 @@
 
 namespace myslam {
 
-Frame::Frame() {
+Frame::Frame() : frame_id_(-1), time_stamp_(-1), camera_(nullptr) {
 
 }
 
 Frame::Frame(size_t frame_id, double time_stamp, SE3 T_c_w, CamPtr camera, Mat img, Mat depth)
         : frame_id_(frame_id), time_stamp_(time_stamp), T_c_w_(T_c_w),
           camera_(camera), img_(img), depth_(depth) {
-  camera_.reset(new Camera(520.9, 521.0, 325.1, 249.7));
+
 }
 
-// 520.9, 0, 325.1, 0, 521.0, 249.7, 0, 0, 1
-
 Frame::FramePtr Frame::CreateFrame() {
-  std::shared_ptr<Frame> frame_ptr;
-  frame_ptr.reset(new Frame(0));
-  return frame_ptr;
+  static size_t factory_id = 0;
+  return Frame::FramePtr(new Frame(factory_id++));
 }
 
 double Frame::FindDepth(const cv::KeyPoint& keypoint) const {
-  double d = depth_.ptr<double>(int(keypoint.pt.y))[int(keypoint.pt.x)];
-  return d;
+  int x = cvRound(keypoint.pt.x);
+  int y = cvRound(keypoint.pt.y);
+  ushort d = depth_.ptr<ushort>(y)[x];
+  if(d != 0) {
+    return double(d) / camera_->GetDepthScale();
+  } else {
+    int dx[4] = {-1, 0, 1, 0};
+    int dy[4] = {0, -1, 0, 1};
+    for(int i = 0; i < 4; ++i) {
+      d = depth_.ptr<ushort>(y + dy[i])[x + dx[i]];
+      if(d != 0) {
+        return double(d) / camera_->GetDepthScale();
+      }
+    }
+  }
+  return -1.0;
 }
 
+/** T_c_w is extrinsic, T_c_w = W_T_C, T_c_w * Pw = W_T_C * Pw = Pc, (convert world to camera)
+ *  T_w_c = T_c_w.inverse(), T_w_c = C_T_W, T_w_c is camera pose in world,
+ *  if center(0, 0) in camera, then center in world is center' = R * center + t = t
+ */
 Vector3d Frame::GetCameraCenter() const {
-  return camera_->GetCameraCenter();
+  return T_c_w_.inverse().translation();
 }
 
 bool Frame::IsInFrame(const Vector3d& pt_world) const {
   // convert to camera coordinate
   Vector3d pt_camera = camera_->World2Camera(pt_world, T_c_w_);
-  Vector2d pt_pixel = camera_->Camera2Pixel(pt_camera);
-  double d = depth_.ptr<double>(int(pt_pixel.y()))[int(pt_pixel.x())];
-  if(d != pt_world(2)) {
+  if(pt_camera.z() < 0) {
     return false;
   }
-  return true;
+  Vector2d pt_pixel = camera_->World2Pixel(pt_world, T_c_w_);
+  return pt_pixel.x() > 0 &&
+         pt_pixel.y() > 0 &&
+         pt_pixel.x() < img_.cols &&
+         pt_pixel.y() < img_.rows;
 }
 
-MapPoint::MapPoint() {
-
-}
-
-MapPoint::MapPoint(size_t id, Vector3d position, Vector3d normal) {
-
-}
-
-MapPoint::MapPointPtr MapPoint::CreateMapPoint() {
-
+size_t Frame::FrameId() const {
+  return frame_id_;
 }
 
 } // namespace myslam

@@ -42,4 +42,8 @@ Vector3d Camera::GetCameraCenter() const {
   return Vector3d(cx_, cy_, 0);
 }
 
+double Camera::GetDepthScale() const {
+  return depth_scale_;
+}
+
 } // namespace myslam

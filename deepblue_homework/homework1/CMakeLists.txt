@@ -8,4 +8,4 @@ set(CMAKE_CXX_STANDARD 11)
 set(GLOG_LIB glog)
 
 add_executable(${PROJECT_NAME} main.cpp)
-target_link_libraries(${PROJECT_NAME} Sophus_LIBRARIES GLOG_LIB)
+target_link_libraries(${PROJECT_NAME} ${Sophus_LIBRARIES} ${GLOG_LIB})

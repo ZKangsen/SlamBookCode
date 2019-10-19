@@ -11,7 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
     <list default="true" id="cbcbacf4-07e9-4afb-b620-7711e3c66880" name="Default" comment="" />
+=======
+    <list default="true" id="bd4ef3a5-ceec-418d-9bcd-903100918110" name="Default" comment="" />
+>>>>>>> add deepblue homework
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +30,13 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
             <state relative-caret-position="192">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
+=======
+            <state relative-caret-position="210">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+>>>>>>> add deepblue homework
             </state>
           </provider>
         </entry>
@@ -35,8 +44,13 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
             <state relative-caret-position="360">
               <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+=======
+            <state relative-caret-position="357">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+>>>>>>> add deepblue homework
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -64,10 +78,17 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
     <option name="x" value="150" />
     <option name="y" value="-4" />
     <option name="width" value="1396" />
     <option name="height" value="1012" />
+=======
+    <option name="x" value="64" />
+    <option name="y" value="-11" />
+    <option name="width" value="1857" />
+    <option name="height" value="1092" />
+>>>>>>> add deepblue homework
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -82,6 +103,13 @@
               <item name="update_rotation" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework1" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
+=======
+            <path>
+              <item name="update_rotation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+>>>>>>> add deepblue homework
           </expand>
           <select />
         </subPane>
@@ -92,7 +120,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+=======
+>>>>>>> add deepblue homework
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -119,6 +150,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
       <changelist id="cbcbacf4-07e9-4afb-b620-7711e3c66880" name="Default" comment="" />
       <created>1571110516651</created>
       <option name="number" value="Default" />
@@ -126,23 +158,44 @@
       <updated>1571110516651</updated>
       <workItem from="1571110518063" duration="1441000" />
       <workItem from="1571124199436" duration="1888000" />
+=======
+      <changelist id="bd4ef3a5-ceec-418d-9bcd-903100918110" name="Default" comment="" />
+      <created>1571147347692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571147347692</updated>
+      <workItem from="1571147349195" duration="1597000" />
+      <workItem from="1571147376885" duration="16000" />
+>>>>>>> add deepblue homework
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
     <option name="totallyTimeSpent" value="3329000" />
+=======
+    <option name="totallyTimeSpent" value="1613000" />
+>>>>>>> add deepblue homework
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32984293" />
+=======
+      <window_info anchor="bottom" id="CMake" order="7" />
+>>>>>>> add deepblue homework
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32984293" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32984293" />
+>>>>>>> add deepblue homework
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -163,21 +216,32 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
         <state relative-caret-position="48">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+=======
+        <state relative-caret-position="210">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+>>>>>>> add deepblue homework
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
         <state relative-caret-position="384">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+=======
+        <state relative-caret-position="315">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+>>>>>>> add deepblue homework
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
     <entry file="file:///usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -210,13 +274,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
+=======
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+>>>>>>> add deepblue homework
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 9252134912dbf479e075187872d0766d41431e18
         <state relative-caret-position="360">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+=======
+        <state relative-caret-position="357">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+>>>>>>> add deepblue homework
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
